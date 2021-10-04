@@ -1,0 +1,54 @@
+* { 
+	box-sizing: border-box;
+}
+html, body {
+    font-family: sans-serif;
+    min-height: 100vh;
+	background: #fff;
+	color: #000;
+}
+	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+	
+body {
+	font-size: 0.9rem;
+	text-rendering: optimizeLegibility;
+}
+	/* sets the base font size for the document; turns on kerning pairs and ligatures */
+	
+body, ul, ol, dl {
+    margin: 20vh;
+    margin-top: 5vh;
+}
+
+.container {
+    height: 50px;
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+	/* begins to set up font sizes relative to base rem – h1 has been used as an example */
+	
+p {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+} 
+	/* sets hyphenation by default on paragraphs */
+	
+img { 
+	border: none;
+	max-width: 100%;
+}
